@@ -1,0 +1,188 @@
+/*!
+   ----------------------------
+    ¦¦¦ Relative Design 1 ¦¦
+   ----------------------------
+     Version - 1.0.0 | © 2016 Relative Design | Licensed under MIT 
+      ~ getRelativeDesign.com  
+	    ~ tutorial.getRelativeDesign.com 
+      ~ https://github.com/Avimm5/Relative-Design/blob/master/LICENSE	  
+ */
+
+body{
+	margin:0px;
+	}
+.full{
+  width:100vw;
+  height:100vh
+}
+.main{
+  width: 61.8vw;
+  height: 61.8vh;
+}
+.side{
+  width: 38.2vw;
+  height: 61.8vh;
+}
+.bottom{
+  width: 38.2vw;
+  height: 61.8vh;
+}
+.clone{
+  width: 38.2vw;
+  height: 38.2vh;
+}
+.main-fw{
+  width: 100vw;
+  height: 61.8vh;
+}
+.main-fh{
+  width: 61.8vw;
+  height: 100vh;
+}
+.side{
+  width: 38.2vw;
+  height: 100vh;
+}
+.bottom-fw{
+  width: 100vw;
+  height: 38.2vh;
+}
+.sm,.sm-in,.md,.md-in,.lg,.lg-in{
+display:block
+}
+.md{
+width:calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618));
+height:calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618));
+}
+.sm{
+width: calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618)) - calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618))/1.618));
+
+height: calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618)) - calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618))/1.618));
+}
+.lg{
+width:calc(100% - calc(100% / 1.618 ));
+height:50%;
+}
+.md-in{
+width:calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618);
+height:calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618);
+}
+.sm-in{
+width:calc(calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618)/1.618);
+height:calc(calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618)/1.618);
+
+}
+.lg-in{
+width:calc(100% - calc(100% - calc(100% / 1.618 )));
+height:calc(100% - calc(100% - calc(100% / 1.618 )));
+}
+.row {
+	clear:both;
+  width:100%;
+}
+.sm,.sm-in,.md,.md-in,.lg,.lg-in{
+	word-wrap: break-word;
+	}
+.lg-fw,.md-fw,.sm-fw,.lg-in-fw,.md-in-fw,.sm-in-fw{
+	width:100%;
+}
+.lg-fh,.md-fh,.sm-fh,.lg-in-fh,.md-in-fh,.sm-in-fh{
+	height:100%;
+}
+.sm,.sm-in,.md,.md-in,.lg,.lg-in,.lg-fw,.md-fw,.sm-fw,.lg-in-fw,.md-in-fw,.sm-in-fw,.lg-fh,.md-fh,.sm-fh,.lg-in-fh,.md-in-fh,.sm-in-fh{
+	position:relative;
+}
+.row .lg,.row .lg-in,.row .sm,.row .sm-in,.row .md,.row .md-in{
+  float:left;
+}
+.row * {
+  float:left;  
+}
+.row-lg,.row-lg-in,.row-sm,.row-sm-in,.row-md,.row-md-in{
+  float:left;
+  width:100%;
+}
+.row-lg *,.row-lg-in *,.row-sm *,.row-sm-in *,.row-md *,.row-md-in *{
+  float:left;
+}
+.row >.row-md-in{
+width:calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618)!important;
+}
+.row >.row-sm-in{
+width:calc(calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618)/1.618)!important;
+}
+.row >.row-lg-in{
+width:calc(100% - calc(100% - calc(100% / 1.618 )))!important;
+}
+.row >.row-md{
+width:calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618))!important;
+}
+.row >.row-sm{
+width: calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618)) - calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618))/1.618))!important;
+}
+.row >.row-lg{
+width:calc(100% - calc(100% / 1.618 ))!important;
+}
+.row >.row-md-in *,
+.row >.row-sm-in *,
+.row >.row-lg-in *,
+.row >.row-md *,
+.row >.row-sm *,
+.row >.row-lg *{
+   float:left;
+}
+@media (max-width: 768px){
+.sm,.sm-in,.md,.md-in,.lg,.lg-in{
+  width:100%;
+  position:relative;
+}
+.m-md-in{
+width:calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618);
+}
+.m-sm-in{
+width:calc(calc(calc(100% - calc(100% - calc(100% / 1.618 )))/1.618)/1.618);
+}
+.m-lg-in{
+width:calc(100% - calc(100% - calc(100% / 1.618 )));
+}
+.m-md{
+width:calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618));
+}
+.m-sm{
+width: calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618)) - calc(calc(calc(100% - calc(100% / 1.618 )) - calc(calc(100% - calc(100% / 1.618 )) / 1.618))/1.618));
+}
+.m-lg{
+width:calc(100% - calc(100% / 1.618 ));
+}
+.m-sm,.m-sm-in,.m-md,.m-md-in,.m-lg,.m-lg-in{
+  float:left;
+  display:inline-block
+}
+.row >.row-md-in ,.row >.row-sm-in ,.row >.row-lg-in ,.row >.row-md ,.row >.row-sm ,.row >.row-lg{
+    float:none;
+    overflow:hidden;
+}
+.row >.m-row-md-in *,.row >.m-row-sm-in *,.row >.m-row-lg-in *,.row >.m-row-md *,.row >.m-row-sm *,.row >.m-row-lg * {
+    float:left;
+    overflow:hidden;
+}
+.m-row >.m-row-md-in ,.m-row >.m-row-sm-in ,.m-row >.m-row-lg-in ,.m-row >.m-row-md ,.m-row >.m-row-sm ,.m-row >.m-row-lg  {
+    float:left;
+    overflow:hidden;
+}
+.hidden{
+  display:hidden;
+}
+}
+.black{
+	background-color:#000;
+}
+.blue{
+	background-color:blue;
+}
+.red{
+  background-color:red;
+}
+.green{
+  background-color:green;
+}
